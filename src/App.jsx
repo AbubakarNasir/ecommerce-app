@@ -7,6 +7,8 @@ import Categories from "./pages/Categories";
 import CategoryPage from "./pages/CategoryPage";
 import Cart from "./pages/Cart";
 import Wishlist from "./pages/Wishlist";
+import Checkout from "./pages/Checkout";
+import OrderConfirmation from "./pages/OrderConfirmation";
 
 export default function App() {
   return (
@@ -20,6 +22,8 @@ export default function App() {
         <Route path="/category/:name" element={<CategoryPage />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/wishlist" element={<Wishlist />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/order-confirmation" element={<OrderConfirmation />} />
       </Routes>
     </BrowserRouter>
   );
