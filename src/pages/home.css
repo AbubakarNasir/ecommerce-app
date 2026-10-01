@@ -1,0 +1,143 @@
+.hero {
+  padding-top: 24px;
+}
+
+.hero-banner {
+  padding: 48px 40px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #2f4f3a, #4a7a5a);
+  color: #fff;
+}
+
+.hero-text h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  max-width: 420px;
+}
+
+.hero-text p {
+  max-width: 400px;
+  margin-top: 14px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #e5f0e8;
+}
+
+.perks {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #eef0f2;
+}
+
+.perk {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.perk svg {
+  font-size: 20px;
+  color: #16a34a;
+  flex-shrink: 0;
+}
+
+.perk strong {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.perk span {
+  font-size: 11px;
+  color: #6b7280;
+}
+
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.section-head h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.view-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #16a34a;
+}
+
+.shop-by-category,
+.featured-products {
+  padding-top: 32px;
+}
+
+.featured-products {
+  padding-bottom: 40px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 20px 12px;
+  border: 1px solid #eef0f2;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.category-card svg {
+  font-size: 22px;
+  color: #16a34a;
+}
+
+.category-card strong {
+  font-size: 12px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.category-card span {
+  font-size: 10px;
+  color: #6b7280;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 900px) {
+  .perks,
+  .category-grid,
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .perks {
+    grid-template-columns: 1fr;
+  }
+}
